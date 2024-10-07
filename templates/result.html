@@ -1,0 +1,20 @@
+<!doctype html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Résultat de la Détection</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+</head>
+<body>
+    <div class="container mt-5 text-center">
+        <h1>Résultat de la Détection</h1>
+        <p class="lead">{{ message }}</p>
+        <img src="{{ image_url }}" class="img-fluid mb-3" alt="Image Annotée" width="200px" height="200px">
+        <div>
+            <a href="{{ pdf_url }}" class="btn btn-secondary" download>Télécharger le Rapport PDF</a>
+        </div>
+        <a href="/" class="btn btn-primary mt-3">Retour</a>
+    </div>
+</body>
+</html>
